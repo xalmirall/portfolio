@@ -369,7 +369,7 @@ iframe {
     }
 
     .navbar{
-        padding: 60px 40px 30px;
+        padding: 30px 40px;
         max-width: 390px;
         gap: 60px;
         margin: 0px auto;
@@ -449,7 +449,7 @@ iframe {
     }
 
     .info-box {
-        width: 294px;
+        max-width: 294px;
     }
 
     .case-block-xl {
