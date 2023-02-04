@@ -449,7 +449,7 @@ iframe {
     }
 
     .info-box {
-        max-width: 294px;
+        width: 294px;
     }
 
     .case-block-xl {
