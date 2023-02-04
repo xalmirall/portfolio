@@ -369,9 +369,9 @@ iframe {
     }
 
     .navbar{
-        padding: 30px 40px;
+        padding: 16px 40px;
         max-width: 390px;
-        gap: 60px;
+        gap: 20px;
         margin: 0px auto;
     }
     
@@ -445,7 +445,7 @@ iframe {
         padding: 16px;
         gap: 24px;
         margin: 0px auto;
-        width: 326px;
+        width: 294px;
     }
 
     .info-box {
