@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="description" content="I create digital products that provide memorable human experiences"/>
+        <meta name="keywords" content="punk rock, català, punk catalunya"/>
+        <title>Discover local artists with Spotify Local Scene - Xavi Almirall | UX/UI Designer</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="normalize.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">        
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <span class="logo">
+                    <a href="index.html"><h5>XAVI ALMIRALL</h5></a>
+                </span>
+                <ul>
+                  <li><a href="index.html"><h6>Work</h6></a></li>
+                  <li><a href="about.html"><h6>About</h6></a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="case-study-header">
+            <img src="images/localscene/cover-localscene.png" alt="Spotify local scene feature mockup">
+        </div>
+        <span class="content-wrapper">
+            <span class="case-block-l">
+                <h1>Discover local artists with Spotify Local Scene</h1>
+                <span class="case-box">
+                    <div class="info-box">
+                        <h5>Challenge</h5>
+                        <p>As part of the third project of the UX/UI Design Bootcamp at Ironhack, I was asked to incorporate a new feature into an existing platform based on the users' needs.</p>
+                    </div>
+                    <div class="info-box">
+                        <h5>Role</h5>
+                        <p>Individual project as a UX/UI Designer.</p>
+                    </div>
+                    <div class="info-box">
+                        <h5>Time</h5>
+                        <p>4 weeks part-time (January 2022)</p>
+                    </div>
+                </span>
+                <h2 class="case-block-m">Context</h2>
+                <p class="case-block-m">
+                    How can we discover music on Spotify? Of course, the platform offers playlists, recommendations, suggestions, and new albums notifications. But have you ever tried to look for new bands? How was your experience?
+                    <br><br>Besides that, each city brings you different vibes. Think in Nashville. What genre first comes into your head? Maybe country? Think in Barcelona or maybe New York? What artists come into your mind?
+                    <br><br>Let me introduce you Local Scene feature for Spotify. This new feature will allow users to discover artists nearby or in different locations filtering by genre.
+                    <br><br>I decided to design the feature on the iOS platform because I am very used to the iOS Design system. Therefore, the frames used for the design are from an iPhone 13.
+                    <br><br>This feature first came to my mind responding to my specific needs. Yes, you guessed it! I'm a curious musician, and I'm constantly looking for emerging bands.
+                </p>
+                <h2 class="case-block-m">UX research</h2>
+                <p class="case-block-m">
+                    I decided to validate it quickly before moving on with the idea, applying a guerrilla research method. I interviewed five Spotify users between 20 and 40 years to understand if this feature made sense.
+                    <br><br>These are some of the insights that I took and classified in the affinity diagram:
+                </p>
+            </span>
+            <div class="case-image-m case-block-m">
+                <img src="images/localscene/affinity-localscene.png" alt="Affinity diagram">
+            </div>
+            <span class="case-block-l">
+                <p class="case-block-m">
+                    Relevant quotes:
+                </p>
+                <p class="case-block-s">
+                    “I go to local clubs or search in the local area to discover local music. I don’t feel like Spotify can help me with that.”
+                    <br><br>“There are situations that you are bored with listening to the same music.”
+                </p>
+                <p class="case-block-m">
+                    Main takeaways:
+                </p>
+                <ul class="case-block-m">
+                    <li>Interviewed users would use the Local Scene feature to discover new artists.</li>
+                    <li>Users often use playlists or look at the suggestions to play new music, but they feel that Spotify can't help them discover new local artists.</li>
+                    <li>Spotify makes users scroll too much to find what they are looking for. I will bear that in mind for the new feature.</li>
+                </ul>
+                <h2 class="case-block-m">Feature comparison</h2>
+                <p class="case-block-m">
+                    Although Spotify keeps leading the market, it has slightly decreased over the past years. Therefore, this scenario is an excellent opportunity to implement this feature to engage more users and recover the lost market share.
+                    <br><br>While doing market research, I realized that Bandcamp is the only competitor allowing to discover artists by location.
+                </p>
+            </span>
+            <div class="case-image-m case-block-m">
+                <img src="images/localscene/features-localscene.png" alt="Affinity diagram">
+            </div>
+            <span class="case-block-l">
+                <h2 class="case-block-m">Travis and his journey</h2>
+                <p class="case-block-m">
+                    Before moving on with the design, I created Travis, my proto persona.
+                </p>
+            </span>
+            <div class="case-image-m case-block-m">
+                <img src="images/localscene/persona-localscene.png" alt="Affinity diagram">
+            </div>
+            <span class="case-block-l">
+                <p class="case-block-m">
+                    Travis is a local artists supporter and likes to discover new local bands and emerging artists from other cities. However, he is tired of listening to the same artists every time he plays a Spotify playlist.
+                </p>
+            </span>
+            <div class="case-image-xl case-block-xl">
+                <img src="images/localscene/journey-localscene.png" alt="Affinity diagram">
+            </div>
+            <span class="case-block-l">
+                <p class="case-block-m">
+                    Travis wants to listen to new punk rock bands, but after playing the Discover Weekly playlist on Spotify, he realizes that there are always the same trendy artists.
+                    <br><br>He wonders if he could find emerging bands in Terrassa, where he lives. So he finally leaves Spotify to google for new bands.
+                </p>
+                <h2 class="case-block-m">Problem & hypothesys statement</h2>
+                <p class="case-block-m">
+                    Travis' journey brings us to the problem statement definition:
+                    <br><br>Spotify local scene was designed to achieve the discovery of emerging local artists.
+                </p>
+                <p class="case-block-s">
+                    We have observed that the playlists and radio are not meeting local music artists’ supporters’ expectations which is causing a loss of engagement of these users to Spotify business.
+                </p>
+                <p class="case-block-m">
+                    And the hypothesis statement:
+                </p>
+                <p class="case-block-s">
+                    We believe creating city filters for local artists’ supporters will achieve a higher retention rate. We will know we are right with the increase in the retention metrics.
+                </p>
+                <h2 class="case-block-m">User flow & sitemap</h2>
+                <p class="case-block-m">
+                    <p class="case-block-m">
+                        We believe creating city filters for local artists’ supporters will achieve a higher retention rate. We will know we are right with the increase in the retention metrics.
+                    </p>
+                </p>
+            </span>
+            <div class="case-image-m case-block-m">
+                <img src="images/localscene/userflow-localscene.png" alt="User flow">
+            </div>
+            <span class="case-block-l">
+                <p class="case-block-m">
+                    Travis is a local artists supporter and likes to discover new local bands and emerging artists from other cities. However, he is tired of listening to the same artists every time he plays a Spotify playlist.
+                </p>
+            </span>
+            <div class="case-image-m case-block-m">
+                <img src="images/localscene/sitemap-localscene.jpg" alt="User flow">
+            </div>
+            <span class="case-block-l">
+                <h2 class="case-block-m">Sketches & wireframes</h2>
+                <p class="case-block-m">
+                    The user flow and site map helped me decide on the main screens to design. The below sketches show six key screens to complete the tasks.
+                </p>
+            </span>
+            <div class="case-image-xl case-block-xl">
+                <img src="images/localscene/sketches-localscene.png" alt="Sketches">
+            </div>
+            <span class="case-block-l">
+                <p class="case-block-m">
+                    I tested the sketches with four users, gathering the following feedback:
+                </p>
+                <p class="case-block-s">
+                    "The Change Location button is misleading. Does it mean that maybe the location is wrong?"
+                    <br><br>"I don't see playlists. Don't the feature include playlists?"
+                </p>
+                <p class="case-block-m">
+                    With this feedback, I started working with the mid-fi prototype. First, I changed the "Change Location" button for "Discover other cities." Then, I added curated playlists in the Local Scene screen.
+                </p>
+            </span>
+            <div class="case-image-m case-block-m">
+                <img src="images/localscene/wireframes-localscene.png" alt="Wireframes">
+            </div>
+            <span class="case-block-l">
+                <p class="case-block-m">
+                    This conversion from sketches to wireframes made me rethink how I presented the information on the screen. For example, I gave more presence to the city name, added a background picture, and put the popular songs in the first place instead of the bands as Spotify is a streaming business.
+                </p>
+            </span>
+            <iframe 
+                src="https://giphy.com/embed/W8hKXkriFZbZusE9sv" 
+                width="660" 
+                height="660" 
+                frameBorder="0" 
+                class="giphy-embed" 
+                allowFullScreen>
+            </iframe>
+            <span class="case-block-l">
+                <p class="case-block-m">
+                    After finishing the mid-fi prototype, I tested it with five users. Overall, the feedback was quite good, but I gathered a critical insight for the hi-fi design:
+                </p>
+                <p class="case-block-s">
+                    “It would be nice to know if the GPS is on. I don’t see anything informing that”
+                </p>
+                <h2 class="case-block-m">Atomic design inventory</h2>
+                <p class="case-block-m">
+                    Once I created and tested the sketches and mid-fi prototype, I did the Atomic Design inventory for Spotify before moving on with the hi-fi prototype. Finally, I compiled the components and their variants on Figma to design faster.
+                    <br><br>Here we can see all the icons, buttons, typography, images, and colors of the Spotify app for iOS:
+                </p>
+            </span>
+            <div class="case-image-m case-block-m">
+                <img src="images/localscene/atoms-localscene.png" alt="Wireframes">
+            </div>
+            <span class="case-block-l">
+                <p class="case-block-m">
+                    Spotify uses its typeface called Spotify Circular. Unfortunately, for copyright reasons, I had to use a fallback font. Researching the design guidelines, I decided to use Helvetica Neue, as Spotify recommends in the documentation.
+                    <br><br>Combining these atoms, I could identify the molecules of the design. In addition, creating a card component with the twelve color variants helped me design the screens faster.
+                </p>
+            </span>
+            <div class="case-image-m case-block-m">
+                <img src="images/localscene/molecules-localscene.png" alt="Wireframes">
+            </div>
+            <span class="case-block-l">
+                <p class="case-block-m">
+                    Here we can see the organisms of the design:
+                </p>
+            </span>
+            <div class="case-image-m case-block-m">
+                <img src="images/localscene/organisms-localscene.png" alt="Wireframes">
+            </div>
+            <span class="case-block-l">
+                <h2 class="case-block-m">Hi-fi prototype</h2>
+                <p class="case-block-m">
+                    But let's get down to the business and try this incredible feature in the hi-fi prototype!
+                </p>
+            </span>
+            <iframe 
+                width="660" 
+                height="371" 
+                src="https://www.youtube.com/embed/tATb12pae7s?controls=0" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen>
+            </iframe>
+            <span class="case-block-l">
+                <ul class="case-block-m">
+                    <li>Search Screen: We can see the Local Scene icon at the top-right corner of this screen, which brings us to the confirmation screen.</li>
+                    <li>Confirmation Screen: Basically, this screen tells Travis that his current location is Terrassa. Spotify gathers this information by geolocation, as we can see in the GPS icon of the status bar. This screen is entirely new and designed from scratch. We can see a picture of the city and some bands that Travis will discover.</li>
+                    <li>Local Scene Screen: On this screen, we can see how many artists we can discover on Terrassa and all the popular local songs. Also, we can see the most listened albums, play some curated playlists based on local artists, and finally, the artists located in Terrassa and the upcoming shows in the city.</li>
+                </ul>
+                <p class="case-block-m">
+                    In this case, Travis wants to discover Punk artists, so he taps on the "Filter by genre" button.
+                </p>
+                <ul class="case-block-m">
+                    <li>Filtered Local Scene Screen: The IA on this screen is the same as the previous one, but we can see all the information about punk genre artists in the city.</li>
+                </ul>
+                <p class="case-block-m">
+                    But what happens if Travis wants to search for other cities? Let's move back to the search screen and click the local scene feature again.
+                </p>
+                <ul class="case-block-m">
+                    <li>Confirmation Screen: instead of tapping continue, Travis will tap "Discover other local scenes."</li>
+                    <li>Search Local Scenes Screen: We have a search bar to search by cities or zip codes. Travis also has recommended cities based on his musical taste, and finally, if he scrolls down, we can see different cities.</li>
+                </ul>
+                <p class="case-block-m">
+                    So that's the Local Scene feature, a new way to discover music. 🎧
+                </p>
+                <h2 class="case-block-m">Next steps</h2>
+                <ul class="case-block-m">
+                    <li>Conduct usability testing sessions with the hi-fi prototype to refine the UI and improve the usability of the new feature.</li>
+                    <li>Iterate the feature with the feedback gathered during the usability test sessions.</li>
+                    <li>Planning a beta test to try the feature with real users and gather more feedback to improve the feature.</li>
+                </ul>
+                <h2 class="case-block-m">Takeaways</h2>
+                <p class="case-block-m">
+                    The first time this idea came to my head, it sounded good. However, until I didn't do some research and started sketching the screens on a piece of paper, I didn't realize the complexity of sorting out the ideas to make the feature helpful. Despite this, it's been quite a journey, and I couldn't be happier with the results!
+                    <br><br>The biggest challenge I faced with this UI challenge was dealing with a non-original font. That generated some font sizing inconsistencies, but I think I have solved it in the best possible way.
+                    <br><br>This three-week project has been crucial to master little by little some Figma tools like the components & variants creation and management. Once you've learned about creating components, creating and maintaining the design, it's easier.
+                </p>
+            </span>
+        </span>
+        <section class="contact">
+            <h3>Let's connect</h3>
+            <p>If you need to get in touch or just say hi!</p>
+            <div class="social">
+                <a href="mailto:xaalna@gmail.com"><img src="images/mail.png" alt=""></a>
+                <a href="https://www.linkedin.com/in/xavialmirall/" target="_blank"><img src="images/linkedin.png" alt="LinkedIn"></a>
+            </div>
+        </section>
+        <footer>
+            <p>© Xavi Almirall | Portfolio designed & coded with ♥️ and ☕️ by me</p>
+        </footer>
+    </body>
+</html>

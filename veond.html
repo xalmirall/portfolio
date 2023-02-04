@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="description" content="I create digital products that provide memorable human experiences"/>
+        <meta name="keywords" content="punk rock, català, punk catalunya"/>
+        <title>Restaurant checkout redesign for Veond's mobile app - Xavi Almirall | UX/UI Designer</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="normalize.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">        
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <span class="logo">
+                    <a href="index.html"><h5>XAVI ALMIRALL</h5></a>
+                </span>
+                <ul>
+                  <li><a href="index.html"><h6>Work</h6></a></li>
+                  <li><a href="about.html"><h6>About</h6></a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="case-study-header">
+            <img src="images/veond/header-veond.jpg" alt="Veond app mockup">
+        </div>
+        <span class="content-wrapper">
+            <span class="case-block-l">
+                <main>
+                    <h1>Restaurant checkout redesign for Veond's mobile app.</h1>
+                </main>
+                <span class="case-box">
+                    <div class="info-box">
+                        <h5>Challenge</h5>
+                        <p>Redesign the check-out restaurant experience and rethink the UI for Veond's native iOS app.</p>
+                    </div>
+                    <div class="info-box">
+                        <h5>Role</h5>
+                        <p>I shared this project with Silvia Vukic as a UX/UI Designer.</p>
+                    </div>
+                    <div class="info-box">
+                        <h5>Time</h5>
+                        <p>4 weeks part-time (during April 2022)</p>
+                    </div>
+                </span>
+                <h2>Client</h2>
+                <p class="case-block-m">
+                    Veond is a vegan app marketplace led by Flor and Alex that brings special deals and offers for dining experiences, takeaways, workshops, and eco-friendly ethical products in just one place.
+                    <br><br>Vend's mission is to end animal exploitation making accessible and interesting the ordinary shopping for vegan goods, foods, and services to everyone.
+                    <br><br>We met Flor and Alex via Zoom, and they gave us some background about the MVP launch in 2020 and how they changed their growth plan because of the pandemic.
+                </p>
+                <h2>Design process</h2>
+                <p class="case-block-m">
+                    To find a solution for this problem and develop a new check-out design, we followed the Design Thinking methodology.
+                </p>
+                <h3 class="case-block-m">Emphasize & Define </h3>
+                <h4 class="case-block-m">- Feature competitive analysis</h4>
+                <p class="case-block-m">
+                    We did an extensive feature competitive analysis to identify opportunities and threats in the current deals platforms market. We compared Veond with 10 direct and indirect competitors and 14 different features. This table shows a reduced version of the original comparison.
+                </p>
+            </span>
+            <div class="case-image-l">
+                <img src="images/veond/competitor-veond.jpg" alt="Competitor analysis">
+            </div>
+            <span class="case-block-l">
+                <p class="case-block-m">
+                    As we can see, direct competitors like Forthgreen or Groupon are offering features such as "community," "discounts stamps," or "newsletter discounts." In addition, ndirect competitors like The Vegankind or Shopveji offer a "reward points" feature.
+                    <br><br>We thought those are great opportunities that currently are not covered by Veond.
+                </p>
+                <h4 class="case-block-m">- Quantitative research</h4>
+                <p class="case-block-m">
+                    Knowing the state of the current market, we wanted to <strong>understand better the behavior of online consumers</strong> that look for products, restaurants, or experiences discounts.
+                    <br><br>We reviewed 6 different studies focused on human online purchasing behavior (
+                        <a href="https://www.invespcro.com/blog/how-discounts-affect-online-consumer-buying-behavior/" target="_blank">Invespcro</a> | 
+                        <a href="https://www.moengage.com/blog/coupons-influence-consumer-purchase-behavior/" target="_blank">MoEngage</a> | 
+                        <a href="https://www.capgemini.com/wp-content/uploads/2022/01/CRI_What-matters-to-todays-consumer_Final-Web.pdf" target="_blank">Capgemini</a>| 
+                        <a href="https://www.forbes.com/sites/catherineerdly/2022/01/27/what-do-consumers-want-in-2022-retail-analysts-reveal-shifting-behaviour/?sh=c13fd2537652">Forbes</a> | 
+                        <a href="https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.989.7940&rep=rep1&type=pdf" target="_blank">Citeseerx</a> | 
+                        <a href="https://www.namogoo.com/blog/consumer-behavior-psychology/psychology-of-discounts/" target="_blank">Namogoo</a>).
+                    <br><br>Some of the takeaways are:
+                    <ul class="case-block-m">
+                        <li>70% of millennials look for discounts before purchasing</li>
+                        <li>30% of female users use discounts compared to 17% of males</li>
+                        <li>66% of consumers close a deal with a coupon if undecided</li>
+                        <li>80% admit they'd try a new brand if it offered them a discount</li>
+                    </ul>
+                </p>
+                <h4 class="case-block-m">- Qualitative research</h4>
+                <p class="case-block-m">
+                    After that, we conducted qualitative research interviewing 7 women based in big European cities. All these <b>women are responsible consumers that buy online and use benefits</b> like rewards, discounts, or coupons.
+                    <br><br>With the interviews, we discovered that:
+                </p>
+                <ul class="case-block-m">
+                    <li>They struggle to find varied and cheap vegan products</li>
+                    <li>Before buying, they usually look for discounts</li>
+                    <li>A discount on food or restaurants is well received and can motivate people to try new experiences</li>
+                    <li>They read reviews when buying online to ensure that they make the right decision</li>
+                </ul>
+                <p class="case-block-m">
+                    Some relevant quotes gathered during the interview:
+                </p>
+                <p class="case-block-s quote">
+                    <i>“Before going to a restaurant, I usually check for reviews” -Cristina, 31</i>
+                    <br><br><i>“I subscribe to the newsletters to get an additional 10%-15% on purchases” -Lara, 26</i>
+                </p>
+                <h4 class="case-block-m">- User persona</h4>
+            </span>
+            <div class="case-image-l">
+                <img src="images/veond/persona-veond.jpg" alt="User persona">
+            </div>
+            <span class="case-block-l">
+                <p class="case-block-m">
+                    Ana is our primary User Persona. She focuses on being more environmentally friendly and wants to discover new sustainable brands while saving money.
+                    <br><br>She finds it challenging to discover vegan products for a reasonable price and spends too much time looking for new ethical brands. When she finds a product or a restaurant, <b>she usually lacks information, making the purchase decision more difficult</b>.
+                </p>
+                <h4 class="case-block-m">- User journey</h4>
+            </span>
+            <div class="case-image-l">
+                <img src="images/veond/journey-veond.jpg" alt="User journey map">
+            </div>
+            <span class="case-block-l">
+            <p class="case-block-m">
+                Looking at Ana's journey map when she buys a vegan product, we can see a <b>significant low point in the decision stage</b>. Here we spotted opportunities like offering her product reviews and a detailed product/experience description to make the decision easier.
+                <br><br>In the explore stage, we can make her journey easier by offering filters inside each category and leverage the engagement stage by providing a newsletter with new deals or reward points for the purchase.
+            </p>
+            <h4 class="case-block-m">- Problem & hypothesis statement</h4>
+            <p class="case-block-m">
+                With all the gathered data, we defined the following problem statement.
+            </p>
+            <p class="case-block-s">
+                Newly environment-conscious consumers need to find a way to get the right information about sustainable and ethical products because they want to make sure that it's worth the purchase.
+            </p>
+            <p class="case-block-m">
+                And the hypothesis statement:
+            </p>
+            <p class="case-block-s">
+                We believe that adding and organizing products/experiences information of Veond's app for environmentally-conscious consumers will increase user engagement and fidelity.
+                <br><br>We will know we are right with higher user interaction and returning users increase.
+            </p>
+            <h3 class="case-block-m">Ideation</h3>
+            <p class="case-block-m">
+                Considering Ana's pain points, we defined three <b>How Might We statements</b>:
+            </p>
+            </span>
+            <div class="case-image-m">
+                <img src="images/veond/hmw-veond.jpg" alt="How Might We statements">
+            </div>
+            <span class="case-block-l">
+                <p class="case-block-m">
+                    With the HMWs in mind, we brainstormed features. The Moscow Method allowed us to categorize what features are a must and optional for the check-out redesign.
+                </p>
+            </span>
+            <div class="case-image-m">
+                <img src="images/veond/moscow-veond.jpg" alt="Moscow method">
+            </div>
+            <span class="case-block-l">
+                <p class="case-block-m">
+                    Bearing in mind Ana's needs, we decided to prioritize:
+                </p>
+                <ul class="case-block-m">
+                    <li>Discounts stamps</li>
+                    <li>Categories and filters</li>
+                    <li>Restaurant location on a map</li>
+                    <li>Detailed product or experience description</li>
+                    <li>Product review and rating</li>
+                    <li>Display the number of comments</li>
+                    <li>Add quantity button</li>
+                    <li>Reward points</li>
+                </ul>
+                <p class="case-block-m">
+                    One of the opportunities presented in our User Journey was to help Ana discover new experiences and brands.
+                </p>
+            </span>
+            <div class="case-image-l">
+                <img src="images/veond/sitemap-veond.jpg" alt="Sitemap">
+            </div>
+            <span class="case-block-l">
+                <p class="case-block-m">
+                    We rethought the Information Architecture of the app to enhance the discovering stage. That's why we created separate sections for Deals (where Ana can find coupons) and Discover (where Ana can find vegan restaurants, learn new recipes, or read the blog).
+                </p>
+                <p class="case-block-m">
+                    We created a new section called Notifications to help Ana discover further discounts and rethought the Check-out and Profile section.
+                </p>
+                <p class="case-block-m">
+                    Then we ideated the check-out journey. Ana will buy a "Brunch for 2 people at Café Comercio" in the happy path.
+                </p>
+            </span>
+            <div class="case-image-l">
+                <img src="images/veond/happypath-veond.jpg" alt="Happy path">
+            </div>
+            <span class="case-block-l">
+                <p class="case-block-m">
+                    Once we defined the site map and user flow, we started putting our ideas together on paper and built the sketches.
+                </p>
+            </span>
+            <div class="case-image-l">
+                <img src="images/veond/sketches-veond.jpg" alt="Veond's check-out sketches">
+            </div>
+            <span class="case-block-l">
+                <p class="case-block-m">
+                    And then, the wireframes:
+                </p>
+            </span>
+            <div class="case-image-l">
+                <img src="images/veond/wireframes-veond.jpg" alt="Veond's check-out wireframes">
+            </div>
+            <span class="case-block-l">
+                <h3 class="case-block-m">Visual design</h3>
+                <h4 class="case-block-m">- Visual competitive analysis</h4>
+                <p class="case-block-m">
+                    We did a visual competitive analysis with 3 apps from direct and indirect competitors that were a referent for our clients and us in terms of visuals and content. The research helped us identify the trends, layouts, colors, and typographies and know how to make Veond stand out.
+                    <br><br>So we highlighted what we liked the most from them to keep it as a reference.
+                    <br><br>These were Fothgreen, Too Good to Go, and Groupon.
+                </p>
+            </span>
+            <div class="case-image-m">
+                <img src="images/veond/forthgreen-visual-veond.jpg" alt="Forthgreen visual competitive analysis">
+            </div>
+            <div class="case-image-m">
+                <img src="images/veond/toogood-visual-veond.jpg" alt="Too Good To Go visual competitive analysis">
+            </div>
+            <div class="case-image-m">
+                <img src="images/veond/groupon-visual-veond.jpg" alt="Groupon visual competitive analysis">
+            </div>
+            <span class="case-block-l">
+                <h4 class="case-block-m">- Brand attributes</h4>
+                <p class="case-block-m">
+                    Veond has solid brand attributes, which we bared in mind throughout the whole process. These attributes are:
+                </p>
+            </span>
+            <div class="case-image-l">
+                <img src="images/veond/attributes-veond.jpg" alt="Veond brand attributes">
+            </div>
+            <span class="case-block-l">
+                <h4 class="case-block-m">- Colors</h4>
+                <p class="case-block-m">
+                    Before picking the new colors, we did a contrast test with the old Veond colors, and we realized the light green they used as a primary color has very low legibility.
+                    <br><br>So we proposed to our clients a color palette based on their attributes in which we tried to keep the essence of Veond but at the same time <b>improve the accessibility</b>, which was very important for them.
+                    <br><br>That's why we went for aquamarine as a primary color, we changed slightly the light green to match the complementary hues, and we kept it as a secondary color and then yellow and pink as an accent and light blue and grey as neutral.
+                </p>
+            </span>
+            <div class="case-image-m">
+                <img src="images/veond/colors-veond.jpg" alt="Veond's color palette">
+            </div>
+            <span class="case-block-l">
+                <h4 class="case-block-m">- Style tile</h4>
+                <p class="case-block-m">
+                    This style tile contains the main UI elements to keep a consistent brand strategy.
+                    <br><br>We chose a new font family called Poppins, a well-known geometric sans serif, because of its versatility and fresh look. We also included the Text Style, UI elements like icons and buttons, and imagery.
+                    <br><br>The images and typography are from a free source which is helpful for start-ups like Veond.
+                </p>
+            </span>
+            <div class="case-image-l">
+                <img src="images/veond/styletyle-veond.jpg" alt="Veond's styletyle">
+            </div>
+            <span class="case-block-l">
+                <h3 class="case-block-m">Test</h3>
+                <h4 class="case-block-m">- Usability test</h4>
+                <p class="case-block-m">
+                    Keeping in mind users and our client feedback, we made some changes to the wireframes to improve the usability and refine our solution. The significant changes we made were in the <b>payment</b> and <b>register</b> screens.
+                </p>
+            </span>
+            <div class="case-image-m">
+                <img src="images/veond/payment-usability-veond.jpg" alt="Payment screen usability test feedback">
+            </div>
+            <span class="case-block-l">
+                <p class="case-block-m">
+                    In the payment screen, we added the "Scan card" feature and a horizontal menu, and the cardholder name to the mandatory information that Ana has to fill in. On the other hand, we changed the buttons component to sentence case, improving the legibility.
+                </p>
+            </span>
+            <div class="case-image-m">
+                <img src="images/veond/register-usability-veond.jpg" alt="Register screen usability test feedback">
+            </div>
+            <span class="case-block-l">
+                <p class="case-block-m">
+                    And in the register screen, we removed the password confirmation as our client suggested. Also, we added a checkbox to accept receiving newsletters after the registration. We also included the login or sign-in with other accounts such as Google, Facebook, and Apple.
+                </p>
+                <h4 class="case-block-m">- Desirability test</h4>
+                <p class="case-block-m">
+                    We wanted to know which impressions caused the new visual design, so we completed a desirability test with 7 users.
+                </p>
+            </span>
+            <div class="case-image-l">
+                <img src="images/veond/desirability-veond.jpg" alt="Desirability test results">
+            </div>
+            <span class="case-block-l">
+                <p class="case-block-m">
+                    The test outcome was a success. The most repeated adjectives were <b>related to Veond brand attributes or essential attributes for them</b>. So we believe we did a good UI job!
+                </p>
+                <h2>Solution</h2>
+                <p class="case-block-m">
+                    And finally let me show you our solution for Veond’s restaurant check-out.
+                </p>
+            </span>
+            <iframe 
+                width="660" 
+                height="371" 
+                src="https://www.youtube.com/embed/aN8lc5iR7Ao" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen>
+            </iframe>
+            <div class="case-image-l">
+                <img src="images/veond/flow1-veond.png" alt="Veond check-out hi-fi mockup">
+            </div>
+            <div class="case-image-l">
+                <img src="images/veond/flow2-veond.png" alt="Veond check-out hi-fi mockup">
+            </div>
+            <div class="case-image-l">
+                <img src="images/veond/flow3-veond.png" alt="Veond check-out hi-fi mockup">
+            </div>
+        </span>
+        <section class="contact">
+            <h3>Let's connect</h3>
+            <p>If you need to get in touch or just say hi!</p>
+            <div class="social">
+                <a href="mailto:xaalna@gmail.com"><img src="images/mail.png" alt=""></a>
+                <a href="https://www.linkedin.com/in/xavialmirall/" target="_blank"><img src="images/linkedin.png" alt="LinkedIn"></a>
+            </div>
+        </section>
+        <footer>
+            <p>© Xavi Almirall | Portfolio designed & coded with ♥️ and ☕️ by me</p>
+        </footer>
+    </body>
+</html>
