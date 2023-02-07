@@ -9,6 +9,9 @@
     --black: #262626;
     --lightgray: #F3F3F3;
     --gray: #B0B0B0;
+    --veond: #C2E678;
+    --eatsypeasy: #F0AD64;
+    --spotify: #A4C9D8;
 }
 
 a {
@@ -177,15 +180,15 @@ article img {
 }
 
 .card-veond {
-    background-color: #C2E678;
+    background-color: var(--veond);
 }
 
 .card-eatsypeasy {
-    background-color: #F0AD64 ;
+    background-color: var(--eatsypeasy);
 }
 
 .card-spotify {
-    background-color: #A4C9D8 ;
+    background-color: var(--spotify);
 }
 
 .contact {
