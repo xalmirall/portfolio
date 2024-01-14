@@ -343,6 +343,9 @@ iframe {
     border-style:none;
 }
 
+.v-spacing-m {
+    margin-top: 56px;
+}
 
 @media (max-width: 600px) {
 
