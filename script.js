@@ -14,7 +14,15 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     backToTopButton.addEventListener("click", function () {
-        document.body.scrollTop = 0; // For Safari
-        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+        smoothScrollToTop();
     });
+
+    function smoothScrollToTop() {
+        var currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
+
+        if (currentScroll > 0) {
+            window.requestAnimationFrame(smoothScrollToTop);
+            window.scrollTo(0, currentScroll - currentScroll / 8); // Adjust the division value for different scroll speeds
+        }
+    }
 });
