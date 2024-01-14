@@ -347,6 +347,28 @@ iframe {
     margin-top: 56px;
 }
 
+/**BACK TO TOP BUTTON**/
+
+#back-to-top-btn {
+    font-family: 'Open Sans', sans-serif;
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--black); /* Button background color */
+    color: #fff; /* Button text color */
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+#back-to-top-btn:hover {
+    background-color: var(--lightgray); /* Hover color */
+    border: 1px solid var(--black);
+    color: var(--black)
+}
+
+
 @media (max-width: 600px) {
 
     h1 {
