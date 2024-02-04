@@ -84,11 +84,14 @@ p{
 /**EFFECTS**/
 
 .fade-in {
-    animation: fadeIn 3s;
+    animation: fadeIn 0.8s;
 }
 
 @keyframes fadeIn {
-    0% { opacity: 0.2; }
+    0% { opacity: 0.0; }
+    25% { opacity: 0.25; }
+    50% {opacity: 0.5; }
+    75% {opacity: 0.75; }
     100% { opacity: 1; }
 }
 
@@ -100,7 +103,7 @@ p{
     box-shadow: rgba(38, 38, 38, 0.35) 0px 5px 15px;
 }
 
-/**EFFECTS**/
+/**END-EFFECTS**/
 
 .quote {
     font-style: oblique;
