@@ -123,6 +123,18 @@ ul li, ol li {
     margin-bottom: -24px;
 }
 
+
+header {
+    border-bottom: 2px solid rgba(243, 243, 243, 0.60);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.90) 0%, rgba(255, 255, 255, 0.70) 100%);
+    box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.02);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px); 
+    position: fixed; /* Set the navbar to fixed position */
+    width: 100%; /* Full width */
+}
+
+
 .navbar{
     display: flex;
     flex-direction: row;
@@ -130,7 +142,6 @@ ul li, ol li {
     align-items: center;
     padding: 44px 40px;
     max-width: 1000px;
-    height: 118px;
     margin: 0px auto;
 }
 
@@ -149,6 +160,7 @@ main {
     gap: 24px;
     margin: 0px auto;
     max-width: 830px;
+    padding-top: 198px;
 }
 
 .case-studies {
@@ -237,7 +249,8 @@ footer p {
     display: block;
     width: 100%;
     max-width: 1728px;
-    margin: -30px auto 0px;
+    margin: auto;
+    padding-top: 118px;
 }
 
 .content-wrapper {
