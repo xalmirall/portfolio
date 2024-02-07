@@ -1,3 +1,4 @@
+/* Show "Back to top button" */
 document.addEventListener("DOMContentLoaded", function () {
     var backToTopButton = document.getElementById("back-to-top-btn");
 
@@ -26,3 +27,24 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 });
+
+
+/* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
+var lastScrollTop = 0;
+
+window.addEventListener("scroll", function() {
+    var header = document.querySelector("header");
+    var currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (currentScroll > lastScrollTop) {
+        // Scroll down
+        header.classList.add("hide");
+    } else {
+        // Scroll up
+        header.classList.remove("hide");
+    }
+    
+    lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // For Mobile or negative scrolling
+});
+
+

@@ -128,15 +128,19 @@ ul li, ol li {
 
 
 header {
-    border-bottom: 2px solid rgba(243, 243, 243, 0.60);
+    border-bottom: 1px solid rgba(243, 243, 243, 0.60);
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.90) 0%, rgba(255, 255, 255, 0.70) 100%);
     box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.02);
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px); 
     position: fixed; /* Set the navbar to fixed position */
     width: 100%; /* Full width */
+    transition: transform 0.5s ease; /* Smooth transition for transform */
 }
 
+header.hide {
+    transform: translateY(-100%);
+}
 
 .navbar{
     display: flex;
