@@ -28,8 +28,8 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
-
 /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
+
 var lastScrollTop = 0;
 
 window.addEventListener("scroll", function() {
@@ -46,5 +46,3 @@ window.addEventListener("scroll", function() {
     
     lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // For Mobile or negative scrolling
 });
-
-
