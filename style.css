@@ -223,12 +223,36 @@ article img {
     z-index: 1;
 }
 
+.card-img {
+    overflow: hidden;
+    flex-shrink: 0;
+    line-height: 0;
+}
+
+.card-img img {
+    transition: transform 0.2s;
+}
+
+.card:hover .card-img img {
+    transform: scale(1.04);
+}
+
 .card-cta {
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     font-weight: 700;
     color: var(--black);
     margin-top: 8px;
+}
+
+.card-cta::after {
+    content: ' →';
+    display: inline-block;
+    transition: transform 0.2s;
+}
+
+.card:hover .card-cta::after {
+    transform: translateX(4px);
 }
 
 .card-veond {
