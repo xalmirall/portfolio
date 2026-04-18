@@ -258,6 +258,15 @@ main {
     text-decoration: none;
 }
 
+.stretched-link:focus {
+    outline: none;
+}
+
+.stretched-link:focus-visible::after {
+    outline: 3px solid var(--black);
+    outline-offset: -3px;
+}
+
 .stretched-link::after {
     content: '';
     position: absolute;
