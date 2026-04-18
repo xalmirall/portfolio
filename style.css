@@ -106,7 +106,7 @@ html {
 }
 
 .shadow {
-    transition: 0.5s;
+    transition: 0.2s;
 }
 
 .shadow:hover {
@@ -197,6 +197,7 @@ main {
     padding: 0px 24px 0px 0px;
     max-width: var(--width-l);
     gap: 85px;
+    position: relative;
 }
 
 article img {
@@ -211,8 +212,8 @@ article img {
     gap: 8px;
 }
 
-.card {
-    position: relative;
+.stretched-link {
+    text-decoration: none;
 }
 
 .stretched-link::after {
@@ -220,6 +221,14 @@ article img {
     position: absolute;
     inset: 0;
     z-index: 1;
+}
+
+.card-cta {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--black);
+    margin-top: 8px;
 }
 
 .card-veond {
