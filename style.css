@@ -179,7 +179,8 @@ main {
     gap: 24px;
     margin: 0px auto;
     max-width: var(--width-l);
-    padding-top: 112px;
+    padding-top: 120px;
+    padding-bottom: 80px;
 }
 
 .case-studies {
@@ -189,7 +190,7 @@ main {
     gap: 48px;
     margin: 0px auto;
     max-width: var(--width-l);
-    margin-top: 128px;
+    margin-top: 0;
 }
 
 .card {
@@ -333,10 +334,10 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 16px 24px;
-    gap: 16px;
+    padding: 0;
+    gap: 24px;
     max-width: var(--width-xl);
-    margin: 80px auto 0px;
+    margin: 96px auto 0px;
 }
 
 .social {
@@ -353,8 +354,8 @@ main {
 footer {
     font-size: 14px;
     text-align: center;
-    margin-top: 80px;
-    margin-bottom: 24px;
+    margin-top: 48px;
+    margin-bottom: 40px;
 }
 
 footer p {
