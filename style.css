@@ -87,6 +87,7 @@ html {
 
 .cta-btn {
     display: inline-block;
+    align-self: center;
     margin-top: 8px;
     padding: 14px 28px;
     background-color: var(--black);
