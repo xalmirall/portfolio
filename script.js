@@ -5,15 +5,11 @@ let lastScrollTop = 0;
 window.addEventListener("scroll", function () {
     const currentScroll = window.scrollY || document.documentElement.scrollTop;
 
+    // Show/hide back to top button
     backToTopButton.classList.toggle("visible", currentScroll > 20);
 
-    const scrollDelta = currentScroll - lastScrollTop;
-    if (scrollDelta > 10) {
-        header.classList.add("hide");
-    } else if (scrollDelta < 0) {
-        header.classList.remove("hide");
-    }
-
+    // Show/hide navbar
+    header.classList.toggle("hide", currentScroll > lastScrollTop && currentScroll > 0);
     lastScrollTop = currentScroll;
 });
 
