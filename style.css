@@ -81,6 +81,29 @@ p{
     color: var(--black);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+.cta-btn {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 14px 28px;
+    background-color: var(--black);
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.cta-btn:hover {
+    background-color: var(--lightgray);
+    color: var(--black);
+    outline: 1px solid var(--black);
+}
+
 /**EFFECTS**/
 
 .fade-in {
