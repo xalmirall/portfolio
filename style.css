@@ -275,7 +275,7 @@ main {
 }
 
 .card:hover .card-img img {
-    transform: scale(1.04);
+    transform: scale(1.02);
 }
 
 .card-cta {
@@ -298,6 +298,10 @@ main {
 
 .card-veond {
     background-color: var(--veond);
+}
+
+.card-veond .card-img img {
+    object-position: top center;
 }
 
 .card-eatsypeasy {
