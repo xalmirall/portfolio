@@ -369,21 +369,29 @@ iframe {
 
 #back-to-top-btn {
     font-family: 'Open Sans', sans-serif;
-    display: none;
+    display: block;
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: var(--black); /* Button background color */
-    color: #fff; /* Button text color */
+    background-color: var(--black);
+    color: #fff;
     border: none;
     padding: 10px 15px;
     cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+#back-to-top-btn.visible {
+    opacity: 1;
+    pointer-events: auto;
 }
 
 #back-to-top-btn:hover {
-    background-color: var(--lightgray); /* Hover color */
+    background-color: var(--lightgray);
     border: 1px solid var(--black);
-    color: var(--black)
+    color: var(--black);
 }
 
 

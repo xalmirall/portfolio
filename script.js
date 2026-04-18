@@ -6,7 +6,7 @@ window.addEventListener("scroll", function () {
     const currentScroll = window.scrollY || document.documentElement.scrollTop;
 
     // Show/hide back to top button
-    backToTopButton.style.display = currentScroll > 20 ? "block" : "none";
+    backToTopButton.classList.toggle("visible", currentScroll > 20);
 
     // Show/hide navbar
     header.classList.toggle("hide", currentScroll > lastScrollTop && currentScroll > 0);
