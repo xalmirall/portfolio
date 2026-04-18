@@ -301,7 +301,8 @@ main {
 }
 
 .card-veond .card-img img {
-    object-position: top center;
+    object-fit: contain;
+    object-position: center;
 }
 
 .card-eatsypeasy {
