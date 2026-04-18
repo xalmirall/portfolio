@@ -211,6 +211,17 @@ article img {
     gap: 8px;
 }
 
+.card {
+    position: relative;
+}
+
+.stretched-link::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+}
+
 .card-veond {
     background-color: var(--veond);
 }
