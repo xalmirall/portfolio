@@ -523,6 +523,39 @@ iframe {
 }
 
 
+@media (max-width: 1024px) {
+    .navbar {
+        padding: 16px 32px;
+    }
+
+    main {
+        padding-left: 32px;
+        padding-right: 32px;
+        box-sizing: border-box;
+    }
+
+    .case-studies {
+        padding-left: 32px;
+        padding-right: 32px;
+        box-sizing: border-box;
+    }
+
+    .card-img {
+        width: 240px;
+        height: 200px;
+    }
+
+    .card {
+        gap: 32px;
+    }
+
+    .contact {
+        padding-left: 32px;
+        padding-right: 32px;
+        box-sizing: border-box;
+    }
+}
+
 @media (max-width: 600px) {
 
     h1 {
