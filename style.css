@@ -596,6 +596,10 @@ iframe {
         height: 140px;
     }
 
+    .card-img img {
+        object-fit: contain;
+    }
+
     .card-info {
         padding: 16px;
     }
