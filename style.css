@@ -229,6 +229,13 @@ main {
     padding: 32px 0;
 }
 
+.card-info p {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
 .card-year {
     font-family: 'Open Sans', sans-serif;
     font-size: 12px;
