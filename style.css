@@ -593,7 +593,7 @@ iframe {
     
     .card-img {
         width: var(--width-mobile);
-        height: 220px;
+        height: 160px;
     }
 
     .card-info {
