@@ -147,7 +147,7 @@ header.hide {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 44px 40px;
+    padding: 20px 40px;
     max-width: 1000px;
     margin: 0px auto;
 }
@@ -167,7 +167,7 @@ main {
     gap: 24px;
     margin: 0px auto;
     max-width: 830px;
-    padding-top: 198px;
+    padding-top: 112px;
 }
 
 .case-studies {
