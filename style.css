@@ -437,7 +437,7 @@ footer {
 
 .about-hero {
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     gap: 64px;
     max-width: var(--width-xl);
 }
@@ -461,7 +461,7 @@ footer {
     align-items: flex-start;
     gap: 32px;
     max-width: var(--width-xl);
-    margin: 96px auto 0px;
+    margin: 32px auto 0px;
 }
 
 .skills-grid {
