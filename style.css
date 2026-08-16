@@ -455,6 +455,37 @@ footer {
     flex: 0 0 380px;
 }
 
+.skills {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+    max-width: var(--width-xl);
+    margin: 96px auto 0px;
+}
+
+.skills-grid {
+    display: flex;
+    flex-direction: row;
+    gap: 48px;
+    width: 100%;
+}
+
+.skills-category {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    flex: 1 1 0%;
+    min-width: 0;
+}
+
+.skills-tags {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
 .timeline {
     position: relative;
     display: flex;
@@ -703,6 +734,12 @@ iframe {
         padding-right: 32px;
         box-sizing: border-box;
     }
+
+    .skills {
+        padding-left: 32px;
+        padding-right: 32px;
+        box-sizing: border-box;
+    }
 }
 
 @media (max-width: 600px) {
@@ -805,6 +842,18 @@ iframe {
 
     .about-hero-img img {
         height: 280px;
+    }
+
+    .skills {
+        padding-left: 16px;
+        padding-right: 16px;
+        box-sizing: border-box;
+        margin-top: 48px;
+    }
+
+    .skills-grid {
+        flex-direction: column;
+        gap: 24px;
     }
 
     .content-wrapper {
