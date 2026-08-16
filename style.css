@@ -161,6 +161,7 @@ header.hide {
     padding: 20px 40px;
     max-width: var(--width-xl);
     margin: 0px auto;
+    box-sizing: border-box;
 }
 
 .navbar ul {
