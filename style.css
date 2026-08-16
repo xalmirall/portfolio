@@ -448,6 +448,57 @@ footer {
     flex: 0 0 380px;
 }
 
+.timeline {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 20px;
+    margin-top: 8px;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 3px;
+    top: 6px;
+    bottom: 6px;
+    width: 2px;
+    background: var(--gray);
+}
+
+.timeline-item {
+    position: relative;
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -20px;
+    top: 6px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--black);
+}
+
+.timeline-label {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    color: var(--black);
+}
+
+.timeline-year {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    color: #444444;
+}
+
 .about-hero-img img {
     display: block;
     width: 100%;
