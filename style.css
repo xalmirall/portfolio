@@ -1,4 +1,4 @@
- @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&family=Open+Sans:wght@400;700&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Space+Grotesk:wght@400;700&display=swap');
 
 *{
     margin: 0px;
@@ -26,7 +26,7 @@ a {
 
 nav a{
     text-decoration: none;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
     font-size: 16px;
     line-height: 27px;
     color: var(--black);
@@ -41,7 +41,7 @@ nav .active {
 }
 
 h1, h2, h3, h4, h5 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
     font-weight: 700;
     color: var(--black);
 }
@@ -79,7 +79,7 @@ h6 {
 }
 
 p{
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 1rem;
     line-height: 24px;
     color: var(--black);
@@ -129,7 +129,7 @@ ul, ol {
 }
 
 ul li, ol li {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 16px;
     line-height: 24px;
     color: var(--black);
@@ -238,7 +238,7 @@ main {
 }
 
 .card-year {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
     font-size: 12px;
     color: #444444;
 }
@@ -251,7 +251,7 @@ main {
 }
 
 .tag {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
     font-size: 11px;
     font-weight: 700;
     color: #444444;
@@ -295,7 +295,7 @@ main {
 }
 
 .card-cta {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
     font-size: 14px;
     font-weight: 700;
     color: var(--black);
@@ -351,7 +351,7 @@ main {
     display: flex;
     align-items: center;
     gap: 8px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
     font-size: 14px;
     font-weight: 700;
     color: var(--black);
@@ -386,14 +386,14 @@ footer {
 }
 
 .footer-name {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
     font-weight: 700;
     font-size: 16px;
     color: var(--black);
 }
 
 .footer-tagline {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 14px;
     color: #444444;
 }
@@ -407,7 +407,7 @@ footer {
 
 .footer-nav a,
 .footer-links a {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
     font-size: 14px;
     color: var(--black);
     text-decoration: none;
@@ -420,7 +420,7 @@ footer {
 }
 
 .footer-copy {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 12px;
     color: #444444;
     text-align: center;
@@ -487,14 +487,14 @@ footer {
 }
 
 .timeline-label {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
     font-weight: 700;
     font-size: 15px;
     color: var(--black);
 }
 
 .timeline-year {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
     font-size: 13px;
     color: #444444;
 }
@@ -624,7 +624,7 @@ iframe {
 /**BACK TO TOP BUTTON**/
 
 #back-to-top-btn {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
     display: block;
     position: fixed;
     bottom: 20px;
