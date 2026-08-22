@@ -32,12 +32,30 @@ nav a{
     color: var(--black);
 }
 
-nav a:hover {
-    text-decoration: underline;
+.logo-link {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: clamp(18px, 16.7px + 0.33vw, 20px);
+    line-height: 1.35;
+    color: var(--black);
 }
 
-nav .active {
+.nav-link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.nav-link:hover {
     text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+.nav-link.active {
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-thickness: 2px;
 }
 
 h1, h2, h3, h4, h5 {
@@ -48,36 +66,30 @@ h1, h2, h3, h4, h5 {
 
 h1 {
     font-size: clamp(32px, 27px + 1.3vw, 40px);
-    line-height: 1.5;
+    line-height: 1.15;
     letter-spacing: -0.015em;
 }
 
 h2 {
     font-size: clamp(28px, 25.5px + 0.66vw, 32px);
-    line-height: 1.5;
+    line-height: 1.2;
     letter-spacing: -0.01em;
 }
 
 h3 {
     font-size: clamp(24px, 21.5px + 0.66vw, 28px);
-    line-height: 1.5;
+    line-height: 1.25;
     letter-spacing: -0.008em;
 }
 
 h4 {
     font-size: clamp(20px, 17.5px + 0.66vw, 24px);
-    line-height: 1.5;
+    line-height: 1.3;
 }
 
 h5 {
     font-size: clamp(18px, 16.7px + 0.33vw, 20px);
-    line-height: 1.5;
-}
-
-h6 {
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 27px;
+    line-height: 1.35;
 }
 
 p{
@@ -119,10 +131,6 @@ html {
 
 .quote {
     font-style: oblique;
-}
-
-.logo a:hover {
-    text-decoration: none;
 }
 
 ul, ol {
@@ -183,6 +191,65 @@ main {
     max-width: var(--width-l);
     padding-top: 120px;
     padding-bottom: 80px;
+}
+
+main.hero {
+    min-height: 70vh;
+    justify-content: center;
+}
+
+.hero-title {
+    font-size: clamp(40px, 30px + 3.5vw, 64px);
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    text-wrap: balance;
+}
+
+main.hero p {
+    max-width: var(--width-s);
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.hero-scroll {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--black);
+    text-decoration: none;
+    margin-top: 16px;
+    border-radius: 2px;
+}
+
+.hero-scroll:focus-visible {
+    outline: 2px solid var(--black);
+    outline-offset: 4px;
+}
+
+.hero-scroll::after {
+    content: '↓';
+    display: inline-block;
+    animation: hero-bounce 1.8s ease-in-out infinite;
+}
+
+.hero-scroll:hover::after {
+    animation-play-state: paused;
+    transition: transform 0.2s;
+    transform: translateY(4px);
+}
+
+@keyframes hero-bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(4px); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .hero-scroll::after {
+        animation: none;
+    }
 }
 
 .case-studies {
@@ -702,6 +769,10 @@ iframe {
         box-sizing: border-box;
     }
 
+    main.hero {
+        min-height: 60vh;
+    }
+
     .case-studies {
         padding-left: 32px;
         padding-right: 32px;
@@ -768,6 +839,11 @@ iframe {
         padding-left: 16px;
         padding-right: 16px;
         box-sizing: border-box;
+    }
+
+    main.hero {
+        min-height: auto;
+        padding-bottom: 48px;
     }
 
     .case-studies {
