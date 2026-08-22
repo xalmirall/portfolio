@@ -1,0 +1,18 @@
+# Xavi Almirall
+
+> Product Designer with a background in psychology, designing software that fits how people actually think and behave.
+
+Personal portfolio of Xavi Almirall, a Barcelona-based Product Designer. Former Tech Recruiter turned UX/UI Designer, combining a psychology background with user research and interface design. The site presents three UX case studies and a background/skills page.
+
+## Pages
+
+- [Home](https://xavialmirall.com/): Introduction and the three featured case studies below.
+- [About](https://xavialmirall.com/about): Background, career timeline (Psychology degree → Tech Recruiter → UX/UI bootcamp → Product Designer), and a skills breakdown (research & strategy, design, tools).
+- [Veond](https://xavialmirall.com/veond): Case study — redesign of the restaurant checkout flow and UI for Veond, a vegan deals marketplace app. UX research, UI design, mobile.
+- [EatsyPeasy](https://xavialmirall.com/eatsypeasy): Case study — native iOS wellness app built from user research, helping people track mental, physical, and emotional wellbeing.
+- [Spotify Local Scene](https://xavialmirall.com/localscene): Case study — a concept feature for Spotify that helps users discover emerging local artists based on location.
+
+## Contact
+
+- Email: xaalna@gmail.com
+- LinkedIn: https://www.linkedin.com/in/xavialmirall/
