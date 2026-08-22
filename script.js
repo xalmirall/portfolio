@@ -23,3 +23,20 @@ backToTopButton.addEventListener("click", function () {
 
 const yearEl = document.getElementById("footer-year");
 if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+// Hero headline word swap (index.html only, skipped if reduced motion is preferred)
+const heroWords = document.querySelectorAll(".hero-word");
+if (heroWords.length > 1 && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    let activeIndex = 0;
+    let swapCount = 0;
+    const maxSwaps = heroWords.length * 3; // a few full passes, then settle back on the first word
+
+    const heroWordTimer = setInterval(function () {
+        heroWords[activeIndex].classList.remove("is-active");
+        activeIndex = (activeIndex + 1) % heroWords.length;
+        heroWords[activeIndex].classList.add("is-active");
+
+        swapCount++;
+        if (swapCount >= maxSwaps) clearInterval(heroWordTimer);
+    }, 2200);
+}
