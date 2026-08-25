@@ -681,6 +681,19 @@ footer {
     min-width: 0;
 }
 
+.skills-category-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.skills-icon {
+    width: 20px;
+    height: 20px;
+    color: var(--black);
+    flex-shrink: 0;
+}
+
 .skills-tags {
     display: flex;
     flex-direction: row;
