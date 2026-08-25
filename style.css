@@ -247,8 +247,23 @@ main {
 }
 
 main.hero {
+    position: relative;
     min-height: 70vh;
     justify-content: center;
+    overflow: hidden;
+}
+
+.hero-mark {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: min(70vw, 640px);
+    height: min(70vw, 640px);
+    color: var(--black);
+    opacity: 0.04;
+    pointer-events: none;
+    z-index: -1;
 }
 
 .hero-title {
@@ -256,6 +271,7 @@ main.hero {
     line-height: 1.05;
     letter-spacing: -0.02em;
     text-wrap: balance;
+    animation: hero-rise 0.6s ease-out both;
 }
 
 .hero-word-swap {
@@ -292,6 +308,8 @@ main.hero p {
     max-width: var(--width-s);
     font-size: 18px;
     line-height: 28px;
+    animation: hero-rise 0.6s ease-out both;
+    animation-delay: 0.12s;
 }
 
 .hero-scroll {
@@ -305,6 +323,30 @@ main.hero p {
     text-decoration: none;
     margin-top: 16px;
     border-radius: 2px;
+    animation: hero-rise 0.6s ease-out both;
+    animation-delay: 0.24s;
+}
+
+.hero-scroll-label {
+    position: relative;
+}
+
+.hero-scroll-label::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 1.5px;
+    background: currentColor;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.25s ease;
+}
+
+.hero-scroll:hover .hero-scroll-label::after,
+.hero-scroll:focus-visible .hero-scroll-label::after {
+    transform: scaleX(1);
 }
 
 .hero-scroll:focus-visible {
@@ -329,8 +371,19 @@ main.hero p {
     50% { transform: translateY(4px); }
 }
 
+@keyframes hero-rise {
+    from { opacity: 0; transform: translateY(16px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
 @media (prefers-reduced-motion: reduce) {
     .hero-scroll::after {
+        animation: none;
+    }
+
+    .hero-title,
+    main.hero p,
+    .hero-scroll {
         animation: none;
     }
 }
