@@ -897,7 +897,7 @@ footer {
     max-width: var(--width-l);
     width: 100%;
     box-sizing: border-box;
-    margin: 0 auto;
+    margin: 64px auto 0;
 }
 
 .next-case-label {
