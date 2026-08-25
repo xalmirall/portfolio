@@ -856,11 +856,21 @@ footer {
     flex-wrap: wrap;
     gap: 8px 20px;
     width: 100%;
-    padding: 20px 0;
-    margin: 8px 0;
+    max-width: var(--width-l);
+    padding: 16px 0;
+    margin: 8px auto;
+    background-color: #fff;
     border-top: 1px solid rgba(38, 38, 38, 0.08);
     border-bottom: 1px solid rgba(38, 38, 38, 0.08);
     box-sizing: border-box;
+    position: sticky;
+    top: 84px;
+    z-index: 5;
+    transition: top 0.3s ease;
+}
+
+.case-toc.header-hidden {
+    top: 0;
 }
 
 .case-toc a {
@@ -875,6 +885,13 @@ footer {
 
 .case-toc a:hover {
     color: var(--black);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.case-toc a.is-active {
+    color: var(--black);
+    font-weight: 700;
     text-decoration: underline;
     text-underline-offset: 3px;
 }
