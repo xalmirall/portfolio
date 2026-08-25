@@ -456,6 +456,7 @@ main.hero p {
     border-radius: 100px;
     padding: 2px 10px;
     letter-spacing: 0.03em;
+    margin-bottom: 0;
 }
 
 .stretched-link {
@@ -700,6 +701,9 @@ footer {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 8px;
+    margin-left: 0;
+    margin-bottom: 0;
+    list-style: none;
 }
 
 .timeline {
@@ -711,6 +715,9 @@ footer {
     gap: 20px;
     padding-left: 20px;
     margin-top: 20px;
+    margin-left: 0;
+    margin-bottom: 0;
+    list-style: none;
 }
 
 .timeline::before {
@@ -729,6 +736,7 @@ footer {
     align-items: baseline;
     flex-wrap: nowrap;
     gap: 8px;
+    margin-bottom: 0;
 }
 
 .timeline-item::before {
