@@ -638,6 +638,7 @@ footer {
     align-items: flex-start;
     gap: 64px;
     max-width: var(--width-xl);
+    padding-bottom: 0;
 }
 
 .about-hero-text {
@@ -663,7 +664,7 @@ footer {
     align-items: flex-start;
     gap: 32px;
     max-width: var(--width-xl);
-    margin: 32px auto 0px;
+    margin: 96px auto 0px;
 }
 
 .skills-grid {
@@ -705,9 +706,11 @@ footer {
     position: relative;
     display: flex;
     flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
     gap: 20px;
     padding-left: 20px;
-    margin-top: 8px;
+    margin-top: 20px;
 }
 
 .timeline::before {
@@ -724,7 +727,7 @@ footer {
     position: relative;
     display: flex;
     align-items: baseline;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     gap: 8px;
 }
 
@@ -739,11 +742,20 @@ footer {
     background: var(--black);
 }
 
+.timeline-item.is-current::before {
+    width: 5px;
+    height: 5px;
+    background: #fff;
+    border: 1.5px solid var(--black);
+}
+
 .timeline-label {
     font-family: 'Space Grotesk', sans-serif;
     font-weight: 700;
     font-size: 15px;
     color: var(--black);
+    flex: 1 1 auto;
+    min-width: 0;
 }
 
 .timeline-year {
@@ -751,6 +763,8 @@ footer {
     font-size: 13px;
     color: #444444;
     letter-spacing: 0.02em;
+    flex: 0 0 100px;
+    white-space: nowrap;
 }
 
 .about-hero-img img {
