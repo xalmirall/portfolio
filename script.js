@@ -1,5 +1,6 @@
 const backToTopButton = document.getElementById("back-to-top-btn");
 const header = document.querySelector("header");
+const caseToc = document.querySelector(".case-toc");
 let lastScrollTop = 0;
 
 window.addEventListener("scroll", function () {
@@ -10,8 +11,10 @@ window.addEventListener("scroll", function () {
     const scrollDelta = currentScroll - lastScrollTop;
     if (scrollDelta > 10) {
         header.classList.add("hide");
+        if (caseToc) caseToc.classList.add("header-hidden");
     } else if (scrollDelta < 0) {
         header.classList.remove("hide");
+        if (caseToc) caseToc.classList.remove("header-hidden");
     }
 
     lastScrollTop = currentScroll;
@@ -39,4 +42,29 @@ if (heroWords.length > 1 && !window.matchMedia("(prefers-reduced-motion: reduce)
         swapCount++;
         if (swapCount >= maxSwaps) clearInterval(heroWordTimer);
     }, 2200);
+}
+
+// Case study section index: highlight the current section while scrolling
+if (caseToc && "IntersectionObserver" in window) {
+    const tocLinks = Array.from(caseToc.querySelectorAll("a"));
+    const sections = tocLinks
+        .map(function (link) {
+            return document.getElementById(link.getAttribute("href").slice(1));
+        })
+        .filter(Boolean);
+
+    const sectionObserver = new IntersectionObserver(
+        function (entries) {
+            entries.forEach(function (entry) {
+                if (!entry.isIntersecting) return;
+                const link = caseToc.querySelector('a[href="#' + entry.target.id + '"]');
+                if (!link) return;
+                tocLinks.forEach(function (l) { l.classList.remove("is-active"); });
+                link.classList.add("is-active");
+            });
+        },
+        { rootMargin: "-160px 0px -70% 0px", threshold: 0 }
+    );
+
+    sections.forEach(function (section) { sectionObserver.observe(section); });
 }
